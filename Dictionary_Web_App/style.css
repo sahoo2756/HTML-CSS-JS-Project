@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #6a397cc7;
+    color: #000;
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+}
+button:hover{
+    scale: 1.05;
+}
+a{
+    text-decoration: none;
+}
+
+.inactive {
+    display: none;
+}
+
+.error{
+    /* color: blue; */
+    text-align: center;
+    margin-top: 5%;
+}
+.border-bottom {
+    border-bottom: 2px solid red;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+#mainContainer{
+    min-height: 40vh;
+    width: 35%;
+    background-color: rgb(233, 233, 233);
+    padding:30px 20px;
+    display: flex; justify-content: flex-start; align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0 , 0 , 0);
+}
+
+#mainContainer #searchBar{
+    width: 100%;
+    margin: 30px 0;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+#mainContainer #searchBar input{
+    width: 80%;
+    font-size: 1.3rem;
+    outline: 0;
+    background-color: transparent;
+    padding: 0 0 10px 5px; 
+    border: 0;
+    border-bottom: 2px solid #a53fc7;
+    font-weight: 600;
+}
+#mainContainer #searchBar input::placeholder{
+    color: #000;
+}
+
+#mainContainer #searchBar button[type = 'submit'] {
+    background-color: #a53fc7;
+    color: #fff;
+    font-size: 1.2rem;
+    padding:10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    letter-spacing: 1.1px;
+}
+
+
+
+/* #dict-details */
+
+
+#dict-details{
+    position: relative;
+    width: 100%;
+}
+
+#audioBtn {
+    position: absolute;
+    right: 30%;
+    top: 2%;
+}
+
+#audio{
+    color: #494949;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+#dict-details h2{
+    letter-spacing: .5px;
+}
+
+#dict-details #verb {
+    opacity: .7;
+    margin-top: 8px;
+}
+
+#definitionBox {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 30px;
+}
+#definitionBox #def{
+    width: 70%;
+    font-weight: 550;
+    color: rgb(62, 78, 89);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    line-height: 20px;
+}
+
+#definitionBox button {
+    background-color: #4a629a;
+    color: #fff;
+    padding:8px 15px;
+    border-radius: 5px;
+}
+
+#dict-details #More_From_Web_Link {
+    display: block;
+    margin-top: 30px;
+    border-left: 3px solid #ab35d2 ;
+    padding-left: 10px;
+    color: blue;
+    font-weight: 530;
+    /* margin-left: 5px; */
+}
+
+
+@media (min-width:0px) and (max-width : 399px) {
+    body {
+        overflow: hidden;
+        background-color: rgb(42, 85, 19);
+    }
+    #mainContainer{
+        width: 100%;
+    }
+    #mainContainer #searchBar button[type = 'submit'] {
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media (min-width:400px) and (max-width : 768px) {
+    body {
+        overflow: hidden;
+        background-color: rgb(42, 85, 19);
+    }
+    #mainContainer{
+        width: 80%;
+    }
+    #mainContainer #searchBar button[type = 'submit'] {
+        font-size: 1rem;
+    }
+
+}
+
+

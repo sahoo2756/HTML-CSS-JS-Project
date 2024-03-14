@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;500&family=Poppins:wght@300&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Sans', sans-serif;
+}
+body{
+   
+    transition: .2s;
+}
+.container{
+    height: 100vh;
+    display: flex;;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    font-size: 22px;
+    color:red;
+}
+.box{
+    padding:5px;
+    border: none;;
+    border-radius: 5px;
+    width:17rem;
+    display: grid;
+    margin:auto;
+    row-gap: 13px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+button{
+    padding:5px 0;
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 18px;;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: aqua;
+    color: purple;
+}

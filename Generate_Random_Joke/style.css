@@ -1,0 +1,135 @@
+/* 
+    body : bgc : #fab22e;
+    smile : &#128514;
+    word-wrap : break-word;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background-color: #7cfa2e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer{
+    width: 50vw;
+    position: relative;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 10px 20px 100px #6dfb14;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+#jokeContent{
+    margin-top: 2.5rem;
+    width: 75%;
+    height: 70%;
+    border: 2px solid grey;
+    padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+#smile{
+    font-size: 4vw;
+}
+#jokeText{
+    margin: 16px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 520;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+}
+
+#generateJokeBtn{
+    margin-top: 1.2rem;
+    width: 35%;
+    font-size: 1.05rem;
+    border-radius: 5px;
+    border: 2px solid  cyan;
+    cursor: pointer;
+    background-color: rgb(41, 118, 205);
+    color: #cecaca;
+    padding: 5px ;
+    transition: all .2s ease-in-out;
+}
+
+#generateJokeBtn:hover{
+    border: 2px solid transparent;
+}
+
+@media (max-width:768px) {
+    button{
+        width: 50%;
+    }
+}
+
+/* #updateJokeCount */
+#updateJokeCount{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#currentJokeDiv , #totalJokeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+#currentJokeDiv span , #totalJokeDiv span{
+    /* border: 2px solid purple; */
+    padding:5px 10px;
+}
+#currentJokeDiv span:nth-child(1){
+}
+
+
+/* macBtns */
+
+#macBtns{
+    position: absolute;
+    width: 65px;
+    top: 20px;
+    left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mac-btn{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 100%;
+}
+.mac-btn:hover{
+    scale: 1.25;
+}
+#mac-back-btn{
+    background-color: crimson;
+}
+#mac-forward-btn{
+    background-color: gold;
+}
+#mac-current-btn{
+    background-color: rgb(0, 255, 195);
+}

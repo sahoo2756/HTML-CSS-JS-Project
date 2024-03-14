@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_Web.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="start-quiz" class="">
+        Start-Quiz
+    </div>
+
+
+    <div class="quiz-box inactive">
+        <h2>1. What Does HTML Satnd For </h2>
+        <div class="options">
+            <div class="option-box">Hyper Text Markup Language</div>
+            <div class="option-box">Hyper Text Multiple Language</div>
+            <div class="option-box">Hyper Text Preprocessor</div>
+            <div class="option-box">Hyper Text Multiprogramming Language</div>
+        </div>
+        <div class="footer">
+            <div id="x of 5 Question">1 of 5 Question</div>
+            <div id="next-question">Next Quextion</div>
+        </div>
+    </div>
+
+    <div class="result inactive">
+        <div class="result-text">
+            <h2>Result</h2>
+        </div>
+        <div class="result-set">
+            <div class="result-box">Total Question : 5</div>
+            <div class="result-box">Right Answer : <span class="right-ans"></span> </div>
+            <div class="result-box">Wrong Answer : <span class="wrong-ans"></span></div>
+            <div class="result-box">Percentage : <span class="percentage-ans"></span> </div>
+        </div>
+
+        <div class="result-footer">
+            <button class="footer-button Again-Quiz">Again-Quiz</button>
+            <button class="footer-button exit">Exit</button>
+        </div>
+
+    </div>
+
+
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

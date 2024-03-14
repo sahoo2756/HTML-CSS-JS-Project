@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;;
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.text-end{
+    text-align: end;
+}
+main{
+  
+}
+p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    font-size: 1.5rem;;
+}
+h2{
+    font-size: 2rem;
+}
+.aside-1{
+    border:2px solid red;
+    margin:auto 0;
+    display:grid;
+    align-items: center;
+    background: linear-gradient(to top right , #42c9eb , #a8f5ff);
+    width:100vw;
+    height:100vh;
+}
+form{
+    width:35%;
+    margin: 0 auto;; 
+    border: 2px solid blue;;
+    padding:30px;   
+    background-color: white;
+}
+.login{
+    font-size:2rem;
+    color:#212121;
+    font-weight: bold;
+
+}
+label{
+    font-size:1rem;
+    color:black;
+    font-weight: bold;
+}
+input{
+    padding:4px;
+    width:100%;
+    height:25px;
+    font-weight: 400;;
+    font-size:1rem;
+    border: 2px solid #aaa8a8cc;
+    padding:15px 10px;
+    
+}
+
+.forgot-password{
+    font-size: .8rem;
+    text-align: center;
+}
+.sign-in{
+    background-color: rgb(37, 37, 196);;
+    padding:3px 0;
+    color:white;
+    width:100%;
+}
+#sign-in:hover{
+    background-color: rgb(9, 9, 252);
+}
+.dont-have-account{
+    font-size: .9rem;
+    text-align: center;
+}

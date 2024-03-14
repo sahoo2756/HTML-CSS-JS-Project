@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCode - generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+       .main-div {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .content {
+        border: 1px solid rgb(232, 224, 224);
+    }
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="main-div">
+        <div class="content img-thumbnail" >
+            <p>Enter Your Text or URL</p>
+            <input type="text" placeholder="Enter Here name" id="input">
+            <div class="qr-container inactive" id="qr_code_div">
+                <img id="qr" class="img-thumbnail" src="" alt="">
+            </div>
+    
+            <button id="btn-for-generate" class="btn btn-primary btn-sm m-auto my-3" style="width: 100%;">Generate</button>
+    
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        let previous_text = null , current_text = NaN;
+
+        const alert_div = document.getElementById("alert-div");
+        const input = document.getElementById("input");
+        const qr_code_div = document.getElementById("qr_code_div");
+        const imgTag = document.querySelector("#qr");
+        const btn = document.querySelector("#btn-for-generate");
+
+        btn.addEventListener('click' , myFun);
+
+        function myFun() {
+              previous_text = current_text;           
+              current_text = input.value;         
+            
+            if(input.value == '') {
+                alert("Please Enter A New Text or URL");
+                return;                
+            } else if (previous_text == current_text) {
+                alert("Please Enter Text or URL");
+                return;                
+            } else {
+                add_img_src();      // generating the QR
+                show_QR(); 
+                                          
+                return;                
+            }
+        }
+
+        function add_img_src() {
+            imgTag.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + input.value;
+        }
+
+        function show_QR() {
+            qr_code_div.classList.remove("inactive")
+        }
+    </script>
+
+
+
+</body>
+</html>
